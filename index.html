@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <input type="number" id="rollD4" value=0>d4</br>
+                    <input type="number" id="rollD6" value=0>d6</br>
+                    <input type="number" id="rollD8" value=0>d8</br>
+                    <input type="number" id="rollD10" value=0>d10</br>
+                    <input type="number" id="rollD12" value=0>d12</br>
+                    <input type="number" id="rollD20" value=0>d20</br>
+                    <input type="number" id="rollD100" value=0>d100</br>
+                    <input type="number" id="rollDCustomTimes" value=0> d <input id="rollDCustomSides" type="number" value=0></br>
+                    Modifier: <input type="number" id="rollModifier" value=0></br>
+                    <button onclick="rollDice();">Roll</button>
+                </div>
+                <div class="col-sm-3">
+                    <div id="rollResult">
+
+                    </div>
+                    <div id="rollTotalResult">
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" placeholder="Roll Name" id="savedRollName"></br>
+                    <button id="saveRoll" onclick="saveRoll();">Save Roll</button>
+                    <div id="savedRolls">
+                        
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="notes">
+                        <textarea rows="10" id="noteArea" >Anteckningar...</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="placeholder">
+                        # of enemies: <input type="number" value="0" class="field" id="numberofenemies"></br>
+            
+                        Health die: </br>
+                        <label><input style="width:40px" class="dieother" type="radio" name="health" value=4> d4</label></br>
+                        <label><input style="width:40px" type="radio" name="health" value=6> d6</label></br>
+                        <label><input style="width:40px" class="dieother" type="radio" name="health" value=8> d8</label></br>
+                        <label><input style="width:40px" type="radio" name="health" value=10> d10</label></br>
+                        <label><input style="width:40px" class="dieother" type="radio" name="health" value=12> d12</label></br>
+                        <label><input style="width:40px" type="radio" name="health" value=20> d20</label></br>
+                        <label><input style="width:40px" class="dieother" type="radio" name="health" value=100> d100</label></br>
+                        
+                        # of die:       <input type="number" value="0" class="field" id="numberofdie"></br>
+                        Con Mod:        <input type="number" value="0" class="field" id="modifier"></br>
+                        Name:           <input type="text" class="field" id="enemyname"></br>
+                        AC:             <input type="number" value="0" class="field" id="armorClass"></br>
+                        Initiative Mod: <input type="number" value="0" class="field" id="initiativeMod"></br>
+                        <button onclick="generate();">Generate</button>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div id="enemies">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js" async defer>
+        </script>
+    </body>
+</html>

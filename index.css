@@ -1,0 +1,56 @@
+.col-sm-4, .col-sm-3{
+    margin: 5px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.noteArea{
+    margin: 100px;
+}
+
+.enemy{
+    margin: 5px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+input{
+    width: 60px;
+}
+
+.dieother{
+    background-color: blue;
+}
+
+.removeButon{
+    width: 10px;
+    float: right;
+    border: 3px;
+}
+
+#enemyname{
+    width: 120px;
+}
+
+#rollTotalResult{
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+
+textarea {
+    border: none !important;
+    background-color: transparent !important;
+    resize: none !important;
+    outline: none !important;
+}
+
+#savedRollName{
+    width: 100%;
+}
