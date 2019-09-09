@@ -3,7 +3,6 @@
     background-color: aliceblue;
     padding: 10px;
 }
-
 .noteArea{
     margin: 100px;
 }
@@ -45,10 +44,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 textarea {
-    border: none !important;
-    background-color: transparent !important;
+    background-color: rgb(213, 235, 255) !important;
     resize: none !important;
     outline: none !important;
+    width: 100%;
+    border: 2px !important;
+    border-style: groove !important;
+    border-color: rgb(132, 140, 255) !important;
 }
 
 #savedRollName{
