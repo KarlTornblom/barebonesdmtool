@@ -1,5 +1,3 @@
-<<<<<<< HEAD:dnd.js
-
 var divId = 0;
 window.onload = onloadFunctions();
 setInterval(saveNotes, 1000);
