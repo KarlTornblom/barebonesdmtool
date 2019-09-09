@@ -1,7 +1,7 @@
 
 var divId = 0;
 window.onload = onloadFunctions();
-setInterval(saveNotes, 10000);
+setInterval(saveNotes, 1000);
 
 function onloadFunctions(){
     loadNotes();
