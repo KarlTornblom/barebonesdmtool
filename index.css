@@ -1,4 +1,9 @@
-.col-sm-4, .col-sm-3{
+.col-sm-4, .col-sm-3, .col-sm-5{
+    margin: 5px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+.col-sm-12{
     margin: 5px;
     background-color: aliceblue;
     padding: 10px;
@@ -55,4 +60,9 @@ textarea {
 
 #savedRollName{
     width: 100%;
+}
+
+.fas{
+    float: right;
+    cursor: pointer;
 }
