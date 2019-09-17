@@ -251,3 +251,13 @@ function saveNotes(){
     console.log('Notes saved')
     window.localStorage.setItem('notes', notesValue);
 }
+
+function hideElement(Element){
+    var siblingElement = Element.nextElementSibling.nextElementSibling;
+    if(siblingElement.style.display == " " || siblingElement.style.display == "none"){
+        siblingElement.style.display = "block";
+    } else{
+        siblingElement.style.display = "none";
+    }
+
+}

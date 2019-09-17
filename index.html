@@ -11,76 +11,121 @@
     </head>
     <body>
         <div class="container">
+
             <div class="row">
+                <div class="col-sm-12">
+
+                    <h1>Tools For The Simple DM</h1>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+
                 <div class="col-sm-3">
-                        <h4>Dice</h4>
-                    <input type="number" id="rollD4" value=0>d4</br>
-                    <input type="number" id="rollD6" value=0>d6</br>
-                    <input type="number" id="rollD8" value=0>d8</br>
-                    <input type="number" id="rollD10" value=0>d10</br>
-                    <input type="number" id="rollD12" value=0>d12</br>
-                    <input type="number" id="rollD20" value=0>d20</br>
-                    <input type="number" id="rollD100" value=0>d100</br>
-                    <input type="number" id="rollDCustomTimes" value=0> d <input id="rollDCustomSides" type="number" value=0></br>
-                    Modifier: <input type="number" id="rollModifier" value=0></br>
-                    <button onclick="rollDice();">Roll</button>
+
+                    <i onclick="hideElement(this);" class="fas fa-chevron-down"></i>
+                    <h4>Dice</h4>
+
+                    <div class="content">
+                        <input type="number" id="rollD4" value=0>d4</br>
+                        <input type="number" id="rollD6" value=0>d6</br>
+                        <input type="number" id="rollD8" value=0>d8</br>
+                        <input type="number" id="rollD10" value=0>d10</br>
+                        <input type="number" id="rollD12" value=0>d12</br>
+                        <input type="number" id="rollD20" value=0>d20</br>
+                        <input type="number" id="rollD100" value=0>d100</br>
+                        <input type="number" id="rollDCustomTimes" value=0> d <input id="rollDCustomSides" type="number" value=0></br>
+                        Modifier: <input type="number" id="rollModifier" value=0></br>
+                        <button onclick="rollDice();">Roll</button>
+                    </div>
+
                 </div>
                 <div class="col-sm-3">
+
+                    <i onclick="hideElement(this);" class="fas fa-chevron-down"></i>
                     <h4>Roll Results</h4>
-                    <div id="rollResult">
 
-                    </div>
-                    <div id="rollTotalResult">
+                    <div class="content">
+                        <div id="rollResult">
+                        </div>
 
+                        <div id="rollTotalResult">
+                        </div>
                     </div>
+
                 </div>
                 <div class="col-sm-3">
-                        <h4>Saved Rolls</h4>
-                    <input type="text" placeholder="Roll Name" id="savedRollName"></br>
-                    <button id="saveRoll" onclick="saveRoll();">Save Roll</button>
-                    <div id="savedRolls">
-                        
 
+                    <i onclick="hideElement(this);" class="fas fa-chevron-down"></i>
+                    <h4>Saved Rolls</h4>
+
+                    <div class="content">
+                        <input type="text" placeholder="Roll Name" id="savedRollName"></br>
+                        <button id="saveRoll" onclick="saveRoll();">Save Roll</button>
+                        <div id="savedRolls">
+                        </div>
                     </div>
+
                 </div>
                 <div class="col-sm-3">
-                    <div id="notes">
-                        <h4>Notes</h4>
+
+                    <i onclick="hideElement(this);" class="fas fa-chevron-down"></i>
+                    <h4>Notes</h4>
+
+                    <div class="content">
                         <textarea rows="10" id="noteArea" >Anteckningar...</textarea>
                     </div>
+
                 </div>
             </div>
+
+
             <div class="row">
+
                 <div class="col-sm-4">
-                        <h4>Bad Boi Generator 3000</h4>
-                    <div class="placeholder">
-                        # of enemies: <input type="number" value="0" class="field" id="numberofenemies"></br>
-            
-                        Health die: </br>
-                        <label><input style="width:40px" class="dieother" type="radio" name="health" value=4> d4</label></br>
-                        <label><input style="width:40px" type="radio" name="health" value=6> d6</label></br>
-                        <label><input style="width:40px" class="dieother" type="radio" name="health" value=8> d8</label></br>
-                        <label><input style="width:40px" type="radio" name="health" value=10> d10</label></br>
-                        <label><input style="width:40px" class="dieother" type="radio" name="health" value=12> d12</label></br>
-                        <label><input style="width:40px" type="radio" name="health" value=20> d20</label></br>
-                        <label><input style="width:40px" class="dieother" type="radio" name="health" value=100> d100</label></br>
-                        
-                        # of die:       <input type="number" value="0" class="field" id="numberofdie"></br>
-                        Con Mod:        <input type="number" value="0" class="field" id="modifier"></br>
-                        Name:           <input type="text" class="field" id="enemyname"></br>
-                        AC:             <input type="number" value="0" class="field" id="armorClass"></br>
-                        Initiative Mod: <input type="number" value="0" class="field" id="initiativeMod"></br>
-                        <button onclick="generate();">Generate</button>
+
+                    <i onclick="hideElement(this);" class="fas fa-chevron-down"></i>
+                    <h4>Enemy Generator</h4>
+
+                    <div class="content">
+                        <div class="placeholder">
+                            # of enemies: <input type="number" value="0" class="field" id="numberofenemies"></br>
+                
+                            Health die: </br>
+                            <label><input style="width:40px" class="dieother" type="radio" name="health" value=4> d4</label></br>
+                            <label><input style="width:40px" type="radio" name="health" value=6> d6</label></br>
+                            <label><input style="width:40px" class="dieother" type="radio" name="health" value=8> d8</label></br>
+                            <label><input style="width:40px" type="radio" name="health" value=10> d10</label></br>
+                            <label><input style="width:40px" class="dieother" type="radio" name="health" value=12> d12</label></br>
+                            <label><input style="width:40px" type="radio" name="health" value=20> d20</label></br>
+                            <label><input style="width:40px" class="dieother" type="radio" name="health" value=100> d100</label></br>
+                            
+                            # of die:       <input type="number" value="0" class="field" id="numberofdie"></br>
+                            Con Mod:        <input type="number" value="0" class="field" id="modifier"></br>
+                            Name:           <input type="text" class="field" id="enemyname"></br>
+                            AC:             <input type="number" value="0" class="field" id="armorClass"></br>
+                            Initiative Mod: <input type="number" value="0" class="field" id="initiativeMod"></br>
+                            <button onclick="generate();">Generate</button>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-sm-5">
-                    <div id="enemies">
-                        
+
+                    <i onclick="hideElement(this);" class="fas fa-chevron-down"></i>
+                    <h4>Enemies</h4>
+                    
+                    <div class="content">
+                        <div id="enemies">    
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-        <script src="index.js" async defer>
-        </script>
+        <script src="index.js" async defer></script>
+        <script src="https://kit.fontawesome.com/adc99abf8b.js"></script>
     </body>
 </html>
