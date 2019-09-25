@@ -1,12 +1,29 @@
 .col-sm-4, .col-sm-3, .col-sm-5{
     margin: 5px;
-    background-color: aliceblue;
     padding: 10px;
+    background-color: aliceblue;
+    height:100%
+}
+.toolHeader{
+    background-color: aliceblue;
+    margin: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-style: none;
+
+}
+.test{
+    background-color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+    width: 100%;
 }
 .col-sm-12{
     margin: 5px;
     background-color: aliceblue;
     padding: 10px;
+    text-align: center;
 }
 .noteArea{
     margin: 100px;
@@ -33,7 +50,7 @@ input{
 }
 
 #enemyname{
-    width: 120px;
+    width: 65%;
 }
 
 #rollTotalResult{
