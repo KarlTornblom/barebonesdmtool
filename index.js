@@ -253,11 +253,16 @@ function saveNotes(){
 }
 
 function hideElement(Element){
-    var siblingElement = Element.nextElementSibling.nextElementSibling;
-    if(siblingElement.style.display == " " || siblingElement.style.display == "none"){
-        siblingElement.style.display = "block";
+    var contentDiv = Element.nextElementSibling;
+    var chevronIcon = Element.firstElementChild;
+    console.log(contentDiv);
+    if(contentDiv.style.display == " " || contentDiv.style.display == "none"){
+        contentDiv.style.display = "block";
+        chevronIcon.className = "fas fa-chevron-down";
     } else{
-        siblingElement.style.display = "none";
+        contentDiv.style.display = "none";
+        chevronIcon.className = "fas fa-chevron-up";
     }
 
 }
+
