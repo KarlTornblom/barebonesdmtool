@@ -11,14 +11,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="body">
     <div class="container">
 
         <div class="row">
             <div class="col-sm-12">
-
+                <i class="far fa-moon"></i>
+                <label class="switch">
+                    <input type="checkbox" value="test" onclick="themeMode(this)">
+                    <span class="slider"></span>
+                </label>
+                <i class="far fa-sun"></i>
                 <h1>Tools For The Simple DM</h1>
-
             </div>
         </div>
 
@@ -33,13 +37,13 @@
                 </div>
 
                 <div class="content">
-                    <input type="number" id="rollD4" value=0>d4</br>
-                    <input type="number" id="rollD6" value=0>d6</br>
-                    <input type="number" id="rollD8" value=0>d8</br>
-                    <input type="number" id="rollD10" value=0>d10</br>
-                    <input type="number" id="rollD12" value=0>d12</br>
-                    <input type="number" id="rollD20" value=0>d20</br>
-                    <input type="number" id="rollD100" value=0>d100</br>
+                    <input type="number" id="rollD4" value=0> d4</br>
+                    <input type="number" id="rollD6" value=0> d6</br>
+                    <input type="number" id="rollD8" value=0> d8</br>
+                    <input type="number" id="rollD10" value=0> d10</br>
+                    <input type="number" id="rollD12" value=0> d12</br>
+                    <input type="number" id="rollD20" value=0> d20</br>
+                    <input type="number" id="rollD100" value=0> d100</br>
                     <input type="number" id="rollDCustomTimes" value=0> d <input id="rollDCustomSides" type="number"
                         value=0></br>
                     Modifier: <input type="number" id="rollModifier" value=0></br>
@@ -154,8 +158,15 @@
 
         </div>
     </div>
-    <script src="index.js" async defer></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/adc99abf8b.js"></script>
+    <script src="index.js" async defer></script>
+    <script src="dice.js"></script>
+    
 </body>
 
 </html>
