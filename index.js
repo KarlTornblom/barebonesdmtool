@@ -67,47 +67,6 @@ function rollDice(){
     
 }
 
-function rollD4(){
-    var roll = Math.floor(Math.random() * 4) + 1;
-    return roll;
-}
-
-function rollD6(){
-    var roll = Math.floor(Math.random() * 6) + 1;
-    return roll;
-}
-
-function rollD8(){
-    var roll = Math.floor(Math.random() * 8) + 1;
-    return roll;
-}
-
-function rollD10(){
-    var roll = Math.floor(Math.random() * 10) + 1;
-    return roll;
-}
-
-function rollD12(){
-    var roll = Math.floor(Math.random() * 12) + 1;
-    return roll;
-}
-
-function rollD20(){
-    var roll = Math.floor(Math.random() * 20) + 1;
-    return roll;
-}
-
-function rollD100(){
-    var roll = Math.floor(Math.random() * 100) + 1;
-    return roll;
-}
-
-function rollDCustom(dCustomSides){
-    var roll = Math.floor(Math.random() * dCustomSides + 1);
-    console.log(roll)
-    return roll;
-}
-
 function generate() {
     
     var healthDie = null;
@@ -266,3 +225,30 @@ function hideElement(Element){
 
 }
 
+function themeMode(element){
+    if(element.checked == true){
+        setDarkTheme();
+    } else{
+        setLightTheme();
+    }
+    function setLightTheme(){
+        $('#body, textarea, .slider')
+        .css('background-color','var(--lightTheme-bg-color)');
+
+        $('.col-sm-4, textarea, .col-sm-3, .col-sm-5, .col-sm-12')
+        .css('color', 'var(--lightTheme-txt-color)');
+
+        $('.slider:before, .col-sm-4, .col-sm-3, .col-sm-5, .col-sm-12, .enemy')
+        .css('background-color','var(--lightTheme-element-color');
+        }
+    function setDarkTheme(){
+        $('#body, textarea, .slider')
+        .css('background-color','var(--darkTheme-bg-color)');
+
+        $('.col-sm-4, textarea, .col-sm-3, .col-sm-5, .col-sm-12')
+        .css('color', 'var(--darkTheme-txt-color)');
+
+        $('.slider:before, .col-sm-4, .col-sm-3, .col-sm-5, .col-sm-12, .enemy')
+        .css('background-color','var(--darkTheme-element-color');
+    } 
+}

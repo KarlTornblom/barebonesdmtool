@@ -1,46 +1,59 @@
+:root {
+    --darkTheme-bg-color: rgb(31,31,31);
+    --darkTheme-txt-color: rgb(184, 184, 184);
+    --darkTheme-element-color: rgb(50,50,50);
+
+    --lightTheme-bg-color: rgb(245, 251, 255); 
+    --lightTheme-txt-color: #00171F;
+    --lightTheme-element-color: rgb(188, 225, 255);
+}
+
+.fa-moon{
+    float: right;
+    padding: 4px;
+}
+
+.fa-sun{
+    float: right;
+    padding: 4px;
+}
+
+#body{
+    background-color: var(--lightTheme-bg-color);
+}
+
 .col-sm-4, .col-sm-3, .col-sm-5{
+    color: var(--lightTheme-txt-color);
     margin: 5px;
     padding: 10px;
-    background-color: aliceblue;
-    height:100%
+    background-color: var(--lightTheme-element-color);
+    height:100%;
 }
+
+.col-sm-12{
+    margin: 5px;
+    background-color: var(--lightTheme-element-color);
+    color: var(--lightTheme-txt-color);
+    padding: 10px;
+    text-align: center;
+}
+
 .toolHeader{
-    background-color: aliceblue;
     margin: 0px;
     padding-right: 0px;
     padding-left: 0px;
     border-style: none;
     cursor: pointer;
 }
-.test{
-    background-color: aliceblue;
-    margin: 0px;
-    padding: 0px;
-    border-style: none;
-    width: 100%;
-}
-.col-sm-12{
-    margin: 5px;
-    background-color: aliceblue;
-    padding: 10px;
-    text-align: center;
-}
-.noteArea{
-    margin: 100px;
-}
 
 .enemy{
     margin: 5px;
     padding: 5px;
-    background-color: aliceblue;
+    background-color: var(--lightTheme-element-color);
 }
 
 input{
     width: 60px;
-}
-
-.dieother{
-    background-color: blue;
 }
 
 .removeButon{
@@ -66,20 +79,80 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 textarea {
-    background-color: rgb(213, 235, 255) !important;
+    /* background-color: rgb(205, 231, 255) !important; */
+    background-color: var(--lightTheme-bg-color);
     resize: none !important;
     outline: none !important;
     width: 100%;
     border: 2px !important;
     border-style: groove !important;
-    border-color: rgb(132, 140, 255) !important;
+    border-color: #00171F !important;
 }
 
 #savedRollName{
     width: 100%;
 }
 
-.fas{
+.fa-chevron-down, .fa-chevron-up{
     float: right;
     cursor: pointer;
 }
+
+/*---------------------------Switch---------------------------------------*/
+
+.switch {
+    float: right;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 23px;
+    /* width: 60px;
+    height: 34px; */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--lightTheme-bg-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #2196F3;
+    /* background-color: rgb(126, 126, 126); */
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: rgb(31,31,31);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+/*------------------------------------------------------------------------*/
