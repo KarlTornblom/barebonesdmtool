@@ -3,9 +3,9 @@
     --darkTheme-txt-color: rgb(184, 184, 184);
     --darkTheme-element-color: rgb(50,50,50);
 
-    --lightTheme-bg-color: rgb(245, 251, 255); 
+    --lightTheme-bg-color: rgb(188, 225, 255);
     --lightTheme-txt-color: #00171F;
-    --lightTheme-element-color: rgb(188, 225, 255);
+    --lightTheme-element-color: rgb(245, 251, 255);
 }
 
 .fa-moon{
