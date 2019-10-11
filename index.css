@@ -71,6 +71,12 @@ input{
     font-weight: bold;
 }
 
+button{
+    background: rgb(127, 197, 255);
+    margin-top: 7px !important;
+    border: none;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {  
 
@@ -79,7 +85,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 textarea {
-    /* background-color: rgb(205, 231, 255) !important; */
     background-color: var(--lightTheme-bg-color);
     resize: none !important;
     outline: none !important;
@@ -106,8 +111,6 @@ textarea {
     display: inline-block;
     width: 40px;
     height: 23px;
-    /* width: 60px;
-    height: 34px; */
 }
 
 .switch input {
@@ -136,7 +139,6 @@ textarea {
     left: 4px;
     bottom: 4px;
     background-color: #2196F3;
-    /* background-color: rgb(126, 126, 126); */
     -webkit-transition: .4s;
     transition: .4s;
 }
