@@ -71,6 +71,12 @@ input{
     font-weight: bold;
 }
 
+button{
+    background: rgb(127, 197, 255);
+    margin-top: 7px !important;
+    border: none;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {  
 

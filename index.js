@@ -240,6 +240,9 @@ function themeMode(element){
 
         $('.slider:before, .col-sm-4, .col-sm-3, .col-sm-5, .col-sm-12, .enemy')
         .css('background-color','var(--lightTheme-element-color');
+
+        $('button')
+        .css('background-color','rgb(127, 197, 255)','color','black');
         }
     function setDarkTheme(){
         $('#body, textarea, .slider')
@@ -250,5 +253,8 @@ function themeMode(element){
 
         $('.slider:before, .col-sm-4, .col-sm-3, .col-sm-5, .col-sm-12, .enemy')
         .css('background-color','var(--darkTheme-element-color');
-    } 
+        
+        $('button')
+        .css('background-color','var(--darkTheme-txt-color)');
+    }
 }
