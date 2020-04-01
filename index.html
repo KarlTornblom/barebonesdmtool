@@ -37,15 +37,31 @@
                 </div>
 
                 <div class="content">
-                    <input type="number" id="rollD4" value=0> d4</br>
-                    <input type="number" id="rollD6" value=0> d6</br>
-                    <input type="number" id="rollD8" value=0> d8</br>
-                    <input type="number" id="rollD10" value=0> d10</br>
-                    <input type="number" id="rollD12" value=0> d12</br>
-                    <input type="number" id="rollD20" value=0> d20</br>
-                    <input type="number" id="rollD100" value=0> d100</br>
-                    <input type="number" id="rollDCustomTimes" value=0> d <input id="rollDCustomSides" type="number"
+                    <label class="inputlabel">
+                        <input type="number" id="rollD4" value=0> d4</br>
+                    </label>
+                    <label class="inputlabel">
+                        <input type="number" id="rollD6" value=0> d6</br>
+                    </label>
+                    <label class="inputlabel">
+                        <input type="number" id="rollD8" value=0> d8</br>
+                    </label>
+                    <label class="inputlabel">
+                        <input type="number" id="rollD10" value=0> d10</br>
+                    </label>
+                    <label class="inputlabel">
+                        <input type="number" id="rollD12" value=0> d12</br>
+                    </label>
+                    <label class="inputlabel">
+                        <input type="number" id="rollD20" value=0> d20</br>
+                    </label>
+                    <label class="inputlabel">
+                        <input type="number" id="rollD100" value=0> d100</br>
+                    </label>
+                    <label class="inputlabel">
+                        <input type="number" id="rollDCustomTimes" value=0> d <input id="rollDCustomSides" type="number"
                         value=0></br>
+                    </label>
                     Modifier: <input type="number" id="rollModifier" value=0></br>
                     <button onclick="rollDice();">Roll</button>
                 </div>
@@ -117,11 +133,30 @@
                         <label><input style="width:40px" class="dieother" type="radio" name="health" value=100>
                             d100</label></br>
 
-                        # of die: <input type="number" value="0" class="field" id="numberofdie"></br>
-                        Con Mod: <input type="number" value="0" class="field" id="modifier"></br>
-                        Name: <input type="text" class="field" id="enemyname"></br>
-                        AC: <input type="number" value="0" class="field" id="armorClass"></br>
-                        Initiative Mod: <input type="number" value="0" class="field" id="initiativeMod"></br>
+                        # of die: 
+                        <label class="inputlabel">
+                            <input type="number" value="0" class="field" id="numberofdie">
+                        </label></br>
+
+                        Con Mod: 
+                        <label class="inputlabel">
+                            <input type="number" value="0" class="field" id="modifier">
+                        </label></br>
+
+                        Name:
+                        <label class="inputlabel">
+                            <input type="text" class="field" id="enemyname">
+                        </label></br>
+
+                        AC: 
+                        <label class="inputlabel">
+                            <input type="number" value="0" class="field" id="armorClass">
+                        </label></br>
+
+                        Initiative Mod: 
+                        <label class="inputlabel">
+                        <input type="number" value="0" class="field" id="initiativeMod">
+                        </label></br>
                         <button onclick="generate();">Generate</button>
                     </div>
                 </div>

@@ -54,6 +54,12 @@
 
 input{
     width: 60px;
+    border-color: black;
+    border-width: 1px;
+}
+
+.inputlabel{
+    margin-top: 1px;
 }
 
 .removeButon{
@@ -63,7 +69,7 @@ input{
 }
 
 #enemyname{
-    width: 65%;
+    width: 100%;
 }
 
 #rollTotalResult{
